@@ -27,6 +27,9 @@ jobs:
       - name: dotnet publish
         run: dotnet publish -c Release -o ./publish_output 
 
+      - name: List files in publish_output
+        run: dir ./publish_output
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
@@ -61,5 +64,5 @@ jobs:
         with:
           app-name: 'credencial-api'
           slot-name: 'Production'
-          package: .
+          package: ./publish_output
           
