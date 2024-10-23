@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PortalProductores.Domain\PortalProductores.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Feature\Centros\Commands\" />
+    <Folder Include="Feature\Especies\Commands\" />
+    <Folder Include="Feature\ExportalExcel\Queries\" />
+    <Folder Include="Feature\Login\Queries\" />
+    <Folder Include="Feature\Procesos\Queries\" />
+    <Folder Include="Feature\Recepciones\Queries\" />
+    <Folder Include="Feature\Temporadas\Commands\" />
+    <Folder Include="Feature\Variedades\Commands\" />
+  </ItemGroup>
+
+</Project>

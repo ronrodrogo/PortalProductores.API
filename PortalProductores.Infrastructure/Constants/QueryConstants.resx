@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeleteUsuarioById" xml:space="preserve">
+    <value>delete from UsuarioProductor where UsuarioId = @UsuarioId
+delete from Usuario where Id = @UsuarioId</value>
+  </data>
+  <data name="DeleteUsuarioProductorByUsuarioId" xml:space="preserve">
+    <value>delete from UsuarioProductor where UsuarioId = @UsuarioId</value>
+  </data>
+  <data name="GetCountProcesos" xml:space="preserve">
+    <value>select COUNT(1) 
+from Proceso WITH(NOLOCK)</value>
+  </data>
+  <data name="GetCountProductores" xml:space="preserve">
+    <value>select COUNT(1) 
+from Productor WITH(NOLOCK)
+where Estado = 1</value>
+  </data>
+  <data name="GetCountRecepciones" xml:space="preserve">
+    <value>select COUNT(1) 
+from Recepcion WITH(NOLOCK)</value>
+  </data>
+  <data name="GetCountUsuarios" xml:space="preserve">
+    <value>select COUNT(1) 
+from Usuario WITH(NOLOCK)</value>
+  </data>
+  <data name="GetListProcesos" xml:space="preserve">
+    <value>select *
+from (
+	select
+		p.ProductorPadreId,
+		pp.Nombre ProductorPadreNombre,
+		p.Id ProductorId,
+		p.Nombre ProductorNombre,
+		v.Id VariedadId,
+		v.Nombre VariedadNombre,
+		pr.Lote,
+		pr.FechaProceso,
+		c.Id CentroId,
+		c.Nombre CentroNombre,
+		pr.KilosProcesados,
+		pr.PorcentajeExportacion,
+		pr.TemporadaId,
+		pr.EspecieId
+	from Proceso pr WITH(NOLOCK)
+	inner join Productor p WITH(NOLOCK) on p.Id = pr.ProductorId
+	inner join Variedad v WITH(NOLOCK) on v.Id = pr.VariedadId
+	inner join Centro c WITH(NOLOCK) on c.Id = pr.CentroId
+	left join Productor pp WITH(NOLOCK) on pp.Id = p.ProductorPadreId
+) data
+where 1 = 1</value>
+  </data>
+  <data name="GetListProductores" xml:space="preserve">
+    <value>select *
+from (
+	select 
+		p.Id,
+		p.CodigoSAP,
+		p.Nombre,
+		p.Rut,
+		p.Correo,
+		p.ProductorPadreId,
+		pp.CodigoSAP CodigoSAPPadre,
+		pp.Nombre NombrePadre,
+		pp.Rut RutPadre,
+		pp.Correo CorreoPadre
+	from Productor p WITH(NOLOCK)
+	left join Productor pp WITH(NOLOCK) on pp.Id = p.ProductorPadreId
+	where p.Estado = 1
+) data
+where 1 = 1</value>
+  </data>
+  <data name="GetListRecepciones" xml:space="preserve">
+    <value>select *
+from (
+	select
+		pp.Id ProductorPadreId,
+		pp.Nombre ProductorPadreNombre,
+		p.Id ProductorId,
+		p.Nombre ProductorNombre,
+		r.TemporadaId,
+		r.EspecieId,
+		r.VariedadId,
+		v.Nombre VariedadNombre,
+		r.Guia,
+		r.NumeroPartida,
+		r.FechaRecepcion,
+		r.CantidadEnvases,
+		r.KilosRecepcionados,
+		r.Estado,
+		case
+			when r.Estado = 0 then 'Inactivo'
+			when r.Estado = 1 then 'Activo'
+			when r.Estado = 2 then 'Aprobado'
+			when r.Estado = 3 then 'Rechazado'
+			when r.Estado = 4 then 'Objetado'
+		end EstadoDescripcion
+	from Recepcion r WITH(NOLOCK)
+	inner join Productor p WITH(NOLOCK) on p.Id = r.ProductorId
+	inner join Variedad v WITH(NOLOCK) on v.Id = r.VariedadId
+	left join Productor pp WITH(NOLOCK) on pp.Id = p.ProductorPadreId
+) data
+where 1 = 1</value>
+  </data>
+  <data name="GetListUsuarioProductorByUsuarioId" xml:space="preserve">
+    <value>select up.UsuarioId, up.ProductorId, p.Rut RutProductor, p.Nombre NombreProductor
+from UsuarioProductor up WITH(NOLOCK)
+inner join Productor p WITH(NOLOCK) on p.Id = up.ProductorId
+where up.UsuarioId = @UsuarioId</value>
+  </data>
+  <data name="GetListUsuarios" xml:space="preserve">
+    <value>select *
+from (
+	select 
+	u.Id, 
+	u.Nombre, 
+	u.Correo,
+	case 
+		when u.Perfil = 1 then 'Administrador'
+		when u.Perfil = 2 then 'Estándar'
+		when u.Perfil = 3 then 'Productor'
+	end TipoPerfil
+	from Usuario u WITH(NOLOCK)
+) data
+where 1 = 1</value>
+  </data>
+  <data name="ValidateExistsProductores" xml:space="preserve">
+    <value>select p.Id ProductorId
+from Productor p WITH(NOLOCK)
+where Id in ({0})</value>
+  </data>
+</root>
