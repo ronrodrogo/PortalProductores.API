@@ -36,6 +36,10 @@ jobs:
           name: .net-app
           path: ./publish_output 
 
+      - name: List files after downloading artifact
+        run: dir
+
+
   deploy:
     runs-on: windows-latest
     needs: build
@@ -64,5 +68,5 @@ jobs:
         with:
           app-name: 'credencial-api'
           slot-name: 'Production'
-          package: ./publish_output
+          package: ./publish_output/**
           
