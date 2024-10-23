@@ -30,6 +30,10 @@ jobs:
       - name: List files 
         run: dir
 
+      - name: List files in publish directory
+        run: |
+          ls ./bin/Release/net8.0/
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
