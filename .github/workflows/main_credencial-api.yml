@@ -71,5 +71,5 @@ jobs:
         with:
           app-name: 'credencial-api'
           slot-name: 'Production'
-          package: ./publish_output/**
+          package: .
           
